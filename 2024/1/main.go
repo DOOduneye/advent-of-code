@@ -31,7 +31,6 @@ func findTotalDistance(left, right []int) int {
 	var totalDiff int
 
 	for i := range l {
-		fmt.Printf("Diff set (left: %d - right: %d = total %d)\n", left[i], right[i], int(math.Abs(float64(left[i]-right[i]))))
 		totalDiff = totalDiff + int(math.Abs(float64(left[i]-right[i])))
 	}
 
